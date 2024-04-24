@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre-Entrega 01 - Carlos Bertoni - Promo Sorteo de Destinos</title>
+
+    <!-- VINCULO JAVASCRIPT desde archivo externo -->
+    <script src="./js/main.js"></script>
+
+    <!-- VINCULO CSS desde archivo externo -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Proyecto Javascript PRE-ENTREGA 1: Sorteo para promoción de viajes.
+    Se realizará un sorteo con la compra de determinados artículos.
+    Se deberá ingresar el nombe, el número de factura de compra (aquí simulado con una cifra menor a 1.000), y elegir un destino entre tres opciones.
+    Mediante un botón en el html, se realiza el sorteo entre todos los participantes.
+    El sistema devuelve:
+    a) El nombre del ganador y el destino elegido.
+    b) Un listado con los participantes con el número de factura y el destino elegido.
+    c) Los tres clientes con mayores importes en las facturas para utilizarlos en premios secundarios, (para el proyecto final) -->
+  </head>
+
+  <body>
+    <h2>PROMO: Sorteamos un ROAD TRIP</h2>
+    <h4>
+      Sorteo de un destino de vacaciones para participantes de una promocion
+    </h4>
+    <div>
+      <ul>
+        <li><a href="#" onclick="ingresoDatos()">Ingresar datos</a></li>
+        <li>
+          <a href="#" onclick="mostrarDatos()">Mostrar datos ingresados</a>
+        </li>
+        <li><a href="#" onclick="realizarSorteo()">Realizar sorteo</a></li>
+      </ul>
+    </div>
+    <div id="resultado">
+      <h2><span id="tit_resultado"></span>&nbsp;</h2>
+      <p id="msg_resultado">&nbsp;</p>
+    </div>
+  </body>
+</html>
